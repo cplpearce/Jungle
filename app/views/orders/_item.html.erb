@@ -1,0 +1,16 @@
+<tr>
+  <td>
+    <%= image_tag product.image.tiny %>
+  </td>
+  <td>
+    <h4><strong><%= product.name %></strong></h4>
+    <br>
+    <p><small><%= product.description %></small></p>
+  </td>
+  <td>
+    <%= quantity %>
+  </td>
+  <td>
+    $<%= product.price * quantity %>
+  </td>
+</tr>
