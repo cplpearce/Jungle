@@ -1,9 +1,8 @@
 <section class="orders-show">
-
+  
   <header class="page-header">
     <h1>Order #<%= @order.id %></h1>
   </header>
-
   <div class="order-summary jumbotron">
     <h3>Thank you for your order!</h3>
     <h4>Summary of Purchase</h4>
@@ -26,7 +25,7 @@
             TOTAL:
           </th>
           <th>
-            $<%= cart_subtotal_cents / 100.0 %>
+            $<%= @order.total_cents / 100.0 %>
           </th>
         </tr>
       </tfoot>

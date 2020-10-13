@@ -36,6 +36,9 @@ gem 'rmagick'
 gem 'stripe'
 gem 'faker'
 
+# Loading ENV vars as YAML Files
+gem "figaro"
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
