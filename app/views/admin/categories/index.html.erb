@@ -16,14 +16,14 @@
           <th>Category</th>
           <th>Item Count</th>
         </tr>
+      </thead>
+      <tbody>
         <% @categories.each do |category| %>
           <tr>
             <td><%= category.name %></td>
             <td><%= @products.where(category_id: category.id).count %></td>
           </tr>
         <% end %>
-      </thead>
-      <tbody>
       </tbody>
     </table>
 
