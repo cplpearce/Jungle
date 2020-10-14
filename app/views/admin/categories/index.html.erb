@@ -2,11 +2,10 @@
 
   <header class="page-header">
     <h1>Admin &raquo; Categories</h1>
-    <%= @testing %>
   </header>
 
   <div class="well">
-    <%= @categories.inspect %>
+    <%= link_to '+ New Category', [:new, :admin, :category], class: 'btn btn-info' %>
   </div>
 
   <div class="panel panel-default products">
@@ -16,8 +15,13 @@
         <tr>
           <th>Category</th>
           <th>Item Count</th>
-          
         </tr>
+        <% @categories.each do |category| %>
+          <tr>
+            <td><%= category.name %></td>
+            <td><%= @products.where(category_id: category.id).count %></td>
+          </tr>
+        <% end %>
       </thead>
       <tbody>
       </tbody>
