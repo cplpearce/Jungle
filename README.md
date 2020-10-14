@@ -38,6 +38,8 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 ![Categories](https://raw.githubusercontent.com/cplpearce/Jungle/master/screenshots/CategryView.png)
 ### User Login
 ![User Login](https://raw.githubusercontent.com/cplpearce/Jungle/master/screenshots/Login.png)
+### User Register
+![User Signup](https://raw.githubusercontent.com/cplpearce/Jungle/master/screenshots/Signup.png)
 ### Admin Login
 ![Admin Login](https://raw.githubusercontent.com/cplpearce/Jungle/master/screenshots/AdminLogin.png)
 ### Admin Edit Products
