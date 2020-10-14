@@ -24,8 +24,28 @@ body {
 h1,
 h2,
 h3,
-nav a {
+nav a,
+nav li {
   font-family: "SansitaSwashed";
+}
+
+// Nav
+.signed-in {
+  pointer-events: none;
+  cursor: default;
+}
+
+// Footer
+.login-info-footer {
+  background-color: rgba(238, 230, 230, 0.822);
+  position: sticky;
+  border: 3px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  width: 15%;
+  text-align: center;
+  left: 1%;
+  bottom: 1%;
 }
 
 // Bootstrap adjustments

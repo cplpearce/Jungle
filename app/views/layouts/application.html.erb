@@ -14,11 +14,13 @@
     <%= yield %>
   </main>
 
-  <% if current_user %>
-    <small>Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %></small>
-  <% else %>
-    <small><%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %></small>
-  <% end %>
+  <footer class="login-info-footer">
+    <% if current_user %>
+      <small>Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %></small>
+    <% else %>
+      <small><%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %></small>
+    <% end %>
+  </footer>
   <%= yield :end_of_body %>
 </body>
 </html>
