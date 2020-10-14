@@ -6,7 +6,9 @@ class UsersController < ApplicationController
 
   def create
     user = User.new(user_params)
-    if user.save
+    if User.exists?(email: user_params["email"])
+      redirect_to '/signup', flash: {error: "Email already exists!"}
+    elsif user.save
       session[:user_id] = user.id
       redirect_to '/'
     else

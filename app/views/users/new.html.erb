@@ -1,7 +1,11 @@
 <!-- app/views/users/new.html.erb -->
 
 <h1 class="form">Signup!</h1>
-
+<% if flash["error"] %>
+  <div class="alert alert-danger" role="alert">
+    <%= flash["error"] %>
+  </div>
+<% end %>
 <div class="form">
   <%= bootstrap_form_for :user, url: '/users' do |f| %>
 
