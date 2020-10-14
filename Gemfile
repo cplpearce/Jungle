@@ -39,6 +39,9 @@ gem 'faker'
 # Loading ENV vars as YAML Files
 gem 'figaro'
 
+# Integrate bootstrap into forms
+gem "bootstrap_form"
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

@@ -15,12 +15,14 @@
   font-family: "Ubuntu";
   src: url("/assets/Ubuntu-Medium.ttf") format("truetype");
 }
+
 // Global
 body {
   padding: 40px 0px;
   font-family: "Ubuntu";
 }
 
+// Fonts
 h1,
 h2,
 h3,
@@ -51,4 +53,18 @@ nav li {
 // Bootstrap adjustments
 form.button_to {
   display: inline;
+}
+
+@import "rails_bootstrap_forms";
+
+// Registration
+
+div.form {
+  padding: 5px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+h1.form {
+  text-align: center;
 }
