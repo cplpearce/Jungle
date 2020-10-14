@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
+  # G E T    R O O T
   root to: 'products#index'
+
+  # A B O U T
+  get "about", to: "about#index"
 
   resources :products, only: [:index, :show]
   resources :categories, only: [:show]
