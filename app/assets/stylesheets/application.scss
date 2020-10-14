@@ -6,9 +6,26 @@
 // App
 @import "products";
 
+@font-face {
+  font-family: "SansitaSwashed";
+  src: url("/assets/SansitaSwashed-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("/assets/Ubuntu-Medium.ttf") format("truetype");
+}
 // Global
 body {
-  padding-top: 70px;
+  padding: 40px 0px;
+  font-family: "Ubuntu";
+}
+
+h1,
+h2,
+h3,
+nav a {
+  font-family: "SansitaSwashed";
 }
 
 // Bootstrap adjustments
