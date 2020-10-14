@@ -1,12 +1,15 @@
 <!-- app/views/users/new.html.erb -->
 
 <h1 class="form">Signup!</h1>
+<!-- If there was a duplicate email, show error -->
 <% if flash["error"] %>
   <div class="alert alert-danger" role="alert">
     <%= flash["error"] %>
   </div>
 <% end %>
 <div class="form">
+  <!-- bootstrap_form_for > integreate bootstrap -->
+  <!-- into embedded rails methods -->
   <%= bootstrap_form_for :user, url: '/users' do |f| %>
 
     <%= f.text_field :first_name, placeholder: "First Name" %>
