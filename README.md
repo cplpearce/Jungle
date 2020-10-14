@@ -45,4 +45,4 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 ### Admin Edit Products
 ![Admin Edit Products](https://raw.githubusercontent.com/cplpearce/Jungle/master/screenshots/AdminProducts.png)
 ### Admin Edit Categories
-![Admin Edit Categories](https://raw.githubusercontent.com/cplpearce/Jungle/master/screenshots/AdminLogin.png)
+![Admin Edit Categories](https://raw.githubusercontent.com/cplpearce/Jungle/master/screenshots/AdminCategories.png)
