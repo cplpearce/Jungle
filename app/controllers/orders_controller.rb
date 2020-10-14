@@ -3,8 +3,13 @@ class OrdersController < ApplicationController
   def show
     @order = Order.find(params[:id])
     @items = @order.line_items
+    # When Stripe API is implemented and hardcoded
+    # user is removed this will let you custom thank
+    # users on order page.
+    # @user = User.find_by "email": @order.email
   end
 
+  # C R E A T E   O R D E R 
   def create
     charge = perform_stripe_charge
     order  = create_order(charge)
