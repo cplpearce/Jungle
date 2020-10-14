@@ -1,6 +1,12 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 4.2 - this mini market offers a ton of cool little features, such as:
+* Showcasing various products, defined by categories.
+* Smart view rules for rendering out-of-stock goods.
+* User management with bcrypt, and a session manager.
+* An admin dashboard with the ability to add products, categories, and view a dashboard of your products.
+* Admin configurations and stripe API/Keys written to ENV vars with figaro ENV management; and
+* user cart management and order viewer for previous checkout and payouts.
 
 ## Setup
 
@@ -8,9 +14,9 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 2. Create `config/database.yml` by copying `config/database.example.yml`
 3. Create `config/secrets.yml` by copying `config/secrets.example.yml`
 4. Run `bin/rake db:reset` to create, load and seed db
-5. Modify config/application.yaml for ENVs
+5. Modify config/application.yaml for Admin username/password, and Stripe vars.
 6. Sign up for a Stripe account
-7. Put Stripe (test) keys into appropriate .env vars
+7. Put Stripe (test) keys into appropriate .env vars in `config/application.yaml`
 8. Run `bin/rails s -b 0.0.0.0` to start the server
 
 ## Stripe Testing
