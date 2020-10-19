@@ -10,6 +10,8 @@ class UsersController < ApplicationController
       redirect_to '/signup', flash: {error: "Email already exists!"}
     elsif user.password.length() < 8
       redirect_to '/signup', flash: {error: "Password not long enough!"}
+    elsif user.password != user.password_confirmation
+      redirect_to '/signup', flash: {error: "Passwords do not match!"}
     elsif user.save
       session[:user_id] = user.id
       redirect_to '/'
