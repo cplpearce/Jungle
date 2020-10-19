@@ -14,8 +14,8 @@
 
     <%= f.text_field :first_name, placeholder: "First Name" %>
     <%= f.text_field :last_name, placeholder: "Last Name" %>
-    <%= f.text_field :email, placeholder: "Email" %>
-    <%= f.password_field :password, placeholder: "Password" %>
+    <%= f.text_field :email, placeholder: "Email must be unique" %>
+    <%= f.password_field :password, placeholder: "Password must be at least eight characters" %>
     <%= f.password_field :password_confirmation, placeholder: "Confirm Password" %>
     <%= f.submit "Submit" %>
 

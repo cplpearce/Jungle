@@ -8,6 +8,8 @@ class UsersController < ApplicationController
     user = User.new(user_params)
     if User.exists?(email: user_params["email"])
       redirect_to '/signup', flash: {error: "Email already exists!"}
+    elsif user.password.length() < 8
+      redirect_to '/signup', flash: {error: "Password not long enough!"}
     elsif user.save
       session[:user_id] = user.id
       redirect_to '/'
