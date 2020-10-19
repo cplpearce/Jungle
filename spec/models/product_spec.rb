@@ -4,7 +4,8 @@ RSpec.describe Product, type: :model do
 
   # Test validations
   # Use .valid? as opposed to save to speed up i/o tests
-  describe 'Validate products' do
+  describe "Validate new products" do
+    # On each test create a new instance var @category and @product
     before(:each) do
       @category = Category.new name: 'Leftorium'
       @product = Product.new(name: 'Left Handed Spatula', price: 29, quantity: 10, category: @category)
